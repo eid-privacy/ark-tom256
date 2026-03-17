@@ -1,29 +1,23 @@
 [package]
 name = "ark-tom256"
-version.workspace = true
-authors.workspace = true
+version = "0.1.0"
 description = "The Tom-256 curve"
-homepage.workspace = true
-repository.workspace = true
 documentation = "https://docs.rs/ark-tom256/"
-keywords.workspace = true
-categories.workspace = true
-include.workspace = true
-license.workspace = true
-edition.workspace = true
+license = "MIT OR Apache-2.0"
+edition = "2021"
 
 [dependencies]
-ark-ff = { workspace = true }
-ark-ec = { workspace = true }
-ark-r1cs-std = { workspace = true, optional = true }
-ark-std = { workspace = true }
+ark-ff = { version = "0.5.0", default-features = false }
+ark-ec = { version = "0.5.0", default-features = false }
+ark-r1cs-std = { version = "0.5.0", default-features = false, optional = true }
+ark-std = { version = "0.5.0", default-features = false }
 
 [dev-dependencies]
-ark-relations = { workspace = true }
-ark-serialize = { workspace = true }
-ark-algebra-test-templates = { workspace = true }
-ark-algebra-bench-templates = { workspace = true }
-ark-curve-constraint-tests = { path = "../curve-constraint-tests" }
+ark-relations = { version = "0.5.0", default-features = false }
+ark-serialize = { version = "0.5.0", default-features = false }
+ark-algebra-test-templates = { version = "0.5.0", default-features = false }
+ark-algebra-bench-templates = { version = "0.5.0", default-features = false }
+ark-curve-constraint-tests = { path = "curve-constraint-tests" }
 
 [features]
 default = []
@@ -34,3 +28,14 @@ r1cs = [ "ark-r1cs-std" ]
 name = "tom256"
 path = "benches/tom256.rs"
 harness = false
+
+[patch.crates-io]
+ark-ec = { git = "https://github.com/arkworks-rs/algebra" }
+ark-ff = { git = "https://github.com/arkworks-rs/algebra" }
+ark-serialize = { git = "https://github.com/arkworks-rs/algebra" }
+ark-poly = { git = "https://github.com/arkworks-rs/algebra" }
+ark-algebra-test-templates = { git = "https://github.com/arkworks-rs/algebra" }
+ark-algebra-bench-templates = { git = "https://github.com/arkworks-rs/algebra" }
+ark-std = { git = "https://github.com/arkworks-rs/std/" }
+ark-r1cs-std = { git = "https://github.com/arkworks-rs/r1cs-std" }
+ark-relations = { git = "https://github.com/arkworks-rs/snark" }

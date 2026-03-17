@@ -12,7 +12,7 @@
 //! Parameters source: <https://neuromancer.sk/std/other/Tom-256#>
 //! Paper: <https://eprint.iacr.org/2021/1183>
 //!
-//! Curve information - in parantheses names from neuromancer.sk:
+//! Curve information - in parentheses names from neuromancer.sk:
 //! * Base field: q (p) =
 //!   secp: 115792089237316195423570985008687907852837564279074904382605163141518161494337
 //!   115792089210356248762697446949407573530594504085698471288169790229257723883799

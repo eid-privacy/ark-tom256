@@ -38,6 +38,13 @@ impl SWCurveConfig for Config {
 
     /// GENERATOR = (G_GENERATOR_X, G_GENERATOR_Y)
     const GENERATOR: Affine = Affine::new_unchecked(G_GENERATOR_X, G_GENERATOR_Y);
+
+    /// Correctness:
+    /// The curve equation is y^2 = x^3 + ax + b
+    /// Substituting (0, 0) gives 0 = b. Since b is not zero,
+    /// the point (0, 0) is not on the curve, so (0, 0) can safely
+    /// flag the zero/identity point.
+    type ZeroFlag = ();
 }
 
 /// G_GENERATOR_X =
