@@ -98,7 +98,7 @@ dependencies = [
  "ark-ec",
  "ark-ff",
  "ark-r1cs-std",
- "ark-relations 0.5.1 (git+https://github.com/arkworks-rs/snark?rev=845ce9d50bbe535792f04b44db78b009ee402ed7)",
+ "ark-relations",
  "ark-serialize",
  "ark-std",
 ]
@@ -181,27 +181,13 @@ source = "git+https://github.com/arkworks-rs/r1cs-std?rev=45e4e2697626a9f9481fe5
 dependencies = [
  "ark-ec",
  "ark-ff",
- "ark-relations 0.5.1 (git+https://github.com/arkworks-rs/snark)",
+ "ark-relations",
  "ark-std",
  "educe",
  "itertools 0.14.0",
  "num-bigint",
  "num-integer",
  "num-traits",
- "tracing",
-]
-
-[[package]]
-name = "ark-relations"
-version = "0.5.1"
-source = "git+https://github.com/arkworks-rs/snark?rev=845ce9d50bbe535792f04b44db78b009ee402ed7#845ce9d50bbe535792f04b44db78b009ee402ed7"
-dependencies = [
- "ark-ff",
- "ark-poly",
- "ark-serialize",
- "ark-std",
- "foldhash",
- "indexmap 2.13.0",
  "tracing",
 ]
 
@@ -252,7 +238,7 @@ dependencies = [
 
 [[package]]
 name = "ark-tom256"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "ark-algebra-bench-templates",
  "ark-algebra-test-templates",
@@ -260,7 +246,7 @@ dependencies = [
  "ark-ec",
  "ark-ff",
  "ark-r1cs-std",
- "ark-relations 0.5.1 (git+https://github.com/arkworks-rs/snark?rev=845ce9d50bbe535792f04b44db78b009ee402ed7)",
+ "ark-relations",
  "ark-serialize",
  "ark-std",
 ]

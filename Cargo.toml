@@ -39,4 +39,4 @@ ark-algebra-test-templates = { git = "https://github.com/arkworks-rs/algebra", r
 ark-algebra-bench-templates = { git = "https://github.com/arkworks-rs/algebra", rev = "8de9a9d9ba52566b1ba5637fbd1b3ce98dad17e8" }
 ark-std = { git = "https://github.com/arkworks-rs/std/", rev = "1693bc56d2ca6657b623f33a3f0b009d0ffeb892" }
 ark-r1cs-std = { git = "https://github.com/arkworks-rs/r1cs-std", rev = "45e4e2697626a9f9481fe57e70ed29c687194102" }
-ark-relations = { git = "https://github.com/arkworks-rs/snark", rev = "845ce9d50bbe535792f04b44db78b009ee402ed7" }
+ark-relations = { git = "https://github.com/arkworks-rs/snark" }
