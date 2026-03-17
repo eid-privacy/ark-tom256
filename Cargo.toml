@@ -1,6 +1,6 @@
 [package]
 name = "ark-tom256"
-version = "0.1.2"
+version = "0.1.3"
 description = "The Tom-256 curve"
 documentation = "https://docs.rs/ark-tom256/"
 license = "MIT OR Apache-2.0"
