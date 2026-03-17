@@ -4,7 +4,7 @@
   "shell": {
     "init_hook": ["git config core.hooksPath .githooks"],
     "scripts": {
-      "test": "cargo test --features r1cs"
+      "test": "cargo test --features r1cs,zero-flag"
     }
   }
 }
