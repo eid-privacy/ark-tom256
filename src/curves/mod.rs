@@ -44,6 +44,7 @@ impl SWCurveConfig for Config {
     /// Substituting (0, 0) gives 0 = b. Since b is not zero,
     /// the point (0, 0) is not on the curve, so (0, 0) can safely
     /// flag the zero/identity point.
+    #[cfg(feature = "zero-flag")]
     type ZeroFlag = ();
 }
 

@@ -41,6 +41,22 @@ The R1CS constraint tests require the `r1cs` feature:
 cargo test --features r1cs
 ```
 
+## Using `zero-flag` in another project
+
+The `zero-flag` feature uses `type ZeroFlag = ()` in the `SWCurveConfig` impl, which relies on a patched version of `ark-ec` not yet released on crates.io. Cargo patches are not inherited through dependencies, so to use this feature in your own project you must add the same patch to your root `Cargo.toml`:
+
+```toml
+[patch.crates-io]
+ark-ec = { git = "https://github.com/arkworks-rs/algebra" }
+```
+
+Then enable the feature when declaring the dependency:
+
+```toml
+[dependencies]
+ark-tom256 = { version = "...", features = ["zero-flag"] }
+```
+
 The `curve-constraint-tests/` directory contains a vendored copy of
 [`ark-curve-constraint-tests`](https://github.com/arkworks-rs/algebra/tree/master/curves/curve-constraint-tests)
 from the arkworks algebra repository. It is not published on crates.io, so it
