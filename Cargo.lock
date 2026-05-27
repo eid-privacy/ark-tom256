@@ -250,7 +250,7 @@ dependencies = [
 
 [[package]]
 name = "ark-tom256"
-version = "0.1.4"
+version = "0.6.0"
 dependencies = [
  "ark-algebra-bench-templates",
  "ark-algebra-test-templates",
