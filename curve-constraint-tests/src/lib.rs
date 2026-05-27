@@ -1,7 +1,7 @@
 pub mod fields {
     use ark_ff::{BitIteratorLE, Field, PrimeField, UniformRand};
     use ark_r1cs_std::prelude::*;
-    use ark_relations::gr1cs::{ConstraintSystem, SynthesisError};
+    use ark_relations::gr1cs::{ ConstraintSystem, SynthesisError};
     use ark_std::{test_rng, vec::*};
 
     pub fn field_test<F, ConstraintF, AF>() -> Result<(), SynthesisError>
