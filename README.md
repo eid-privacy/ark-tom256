@@ -1,5 +1,7 @@
 # Tom-256
 
+[![crates.io](https://img.shields.io/crates/v/ark-tom256.svg)](https://crates.io/crates/ark-tom256)
+
 This library implements the tom256 curve and is a copy of the secp256r1 implementation.
 Parameters source: <https://neuromancer.sk/std/other/Tom-256#>
 Paper: <https://eprint.iacr.org/2021/1183>
@@ -74,7 +76,7 @@ Then depend on this library normally:
 
 ```toml
 [dependencies]
-ark-tom256 = "..."
+ark-tom256 = "0.6"
 ```
 
 ### Without the patched `ark-ec`
@@ -83,13 +85,13 @@ Disable the default features to exclude `zero-flag`:
 
 ```toml
 [dependencies]
-ark-tom256 = { version = "...", default-features = false }
+ark-tom256 = { version = "0.6", default-features = false }
 ```
 
 Re-enable any other default features you need (e.g. `std`):
 
 ```toml
-ark-tom256 = { version = "...", default-features = false, features = ["std"] }
+ark-tom256 = { version = "0.6", default-features = false, features = ["std"] }
 ```
 
 The `curve-constraint-tests/` directory contains a vendored copy of
