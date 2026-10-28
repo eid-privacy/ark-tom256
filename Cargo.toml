@@ -20,7 +20,7 @@ ark-algebra-bench-templates = { version = "0.6.0", default-features = false }
 ark-curve-constraint-tests = { path = "curve-constraint-tests" }
 
 [features]
-default = []
+default = ["zero-flag", "r1cs"]
 std = [ "ark-std/std", "ark-ff/std", "ark-ec/std" ]
 r1cs = [ "ark-r1cs-std" ]
 zero-flag = []
